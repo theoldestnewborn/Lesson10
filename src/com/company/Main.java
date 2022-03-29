@@ -1,33 +1,19 @@
 package com.company;
 
-import org.w3c.dom.ls.LSOutput;
-
-import javax.print.attribute.standard.MediaSize;
-import java.nio.charset.StandardCharsets;
-import java.util.Arrays;
-import java.util.Locale;
-
 public class Main {
 
     public static void main(String[] args) {
 
-        String doc1 = "1111-AAA-2222-BBB-1a2b";
+        String doc1 = "1241-ABA-2342-BAB-1A2b";
         System.out.println(doc1);
         System.out.println();
         Doc.twoBlocks(doc1);
-        Doc.pattern(doc1);
-        Doc.pattern2(doc1);
-        Doc.pattern3(doc1);
-        Doc.pattern4(doc1);
-        Doc.pattern5(doc1);
-        Doc.pattern6(doc1);
-        Doc.pattern7(doc1);
+        Doc.lettersToAst1(doc1);
+        Doc.lettersToAst2(doc1);
+        Doc.onlyLetterUp1(doc1);
+        Doc.onlyLetterUp2(doc1);
+        Doc.searchAbcSequence(doc1);
+        Doc.endsWith1a2b(doc1);
+        Doc.startsWith555(doc1);
     }
 }
-
-
-
-
-//        Все эти методы реализовать в отдельном классе в статических методах,
-//        которые на вход (входным параметром) будут принимать вводимую на вход
-//        программы строку.
